@@ -11,9 +11,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case 'PUT':
         require_once 'ugyfel/putUgyfel.php';
         break;
-    case 'DELETE':
-        require_once 'ugyfel/deleteUgyfel.php';
-        break;
 
     default:
         # code...
