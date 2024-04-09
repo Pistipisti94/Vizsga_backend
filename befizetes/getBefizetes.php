@@ -4,7 +4,7 @@ $SQL = '';
 if (count($keresSzoveg) > 1) {
     if(is_int(intval($keresSzoveg[1])))
     {
-        $SQL = 'SELECT * FROM ugyfel WHERE azon = ' .  $keresSzoveg[1];
+        $SQL = 'SELECT * FROM befiz WHERE azon = ' .  $keresSzoveg[1];
     }
     else
     {
@@ -15,7 +15,7 @@ if (count($keresSzoveg) > 1) {
     }
 
 } else {
-    $SQL = 'SELECT * FROM ugyfel where 1';
+    $SQL = 'SELECT * FROM befiz where 1';
 }
 require_once './database.php';
 $result = $connection->query($SQL);

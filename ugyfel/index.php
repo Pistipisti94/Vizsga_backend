@@ -6,10 +6,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
     case 'POST':
         require_once 'ugyfel/postUgyfel.php';
-
-        break;
-    case 'PUT':
-        require_once 'ugyfel/putUgyfel.php';
         break;
 
     default:
